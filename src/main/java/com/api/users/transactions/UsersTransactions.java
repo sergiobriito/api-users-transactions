@@ -6,10 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @EnableRabbit
 @SpringBootApplication
-public class PicpaySimplificadoApplication {
-
+public class UsersTransactions {
 	public static void main(String[] args) {
-		SpringApplication.run(PicpaySimplificadoApplication.class, args);
+		SpringApplication.run(UsersTransactions.class, args);
 	}
 
 }

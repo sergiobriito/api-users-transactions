@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/users-transactions
+    username: postgres
+    password: 9337
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format-sql: true
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+  rabbitmq:
+    addresses: amqps://frjnbkzm:IuT8-aShI0X0G7fzfdTs7YZCnYldTMtJ@sparrow.rmq.cloudamqp.com/frjnbkzm
+    queue: api-project-1
+    routingkey: IuT8-aShI0X0G7fzfdTs7YZCnYldTMtJ
+    
+  security:
+    jwt:
+      token:
+        secret-key: 67556B58703273357638792F423F4528482B4D6251655468566D597133743677
+
+

@@ -1,4 +1,4 @@
-package com.api.users.transactions.configs;
+package com.api.users.transactions.configs.rabbitmq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Value;

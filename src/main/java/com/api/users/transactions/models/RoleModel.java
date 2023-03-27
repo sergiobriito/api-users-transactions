@@ -3,6 +3,7 @@ package com.api.users.transactions.models;
 import java.io.Serializable;
 import java.util.UUID;
 
+import lombok.AllArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 
 import com.api.users.transactions.enums.RoleName;
@@ -27,7 +28,6 @@ public class RoleModel implements GrantedAuthority, Serializable{
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, unique = true)
 	private RoleName roleName;
-	
 	@Override
 	public String getAuthority() {
 		return this.roleName.toString();
